@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED5563171F6100190060308F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5563161F6100190060308F /* AppDelegate.swift */; };
+		ED5563191F6100190060308F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5563181F6100190060308F /* ViewController.swift */; };
+		ED55631C1F6100190060308F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED55631A1F6100190060308F /* Main.storyboard */; };
+		ED55631E1F6100190060308F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED55631D1F6100190060308F /* Assets.xcassets */; };
+		ED5563211F6100190060308F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED55631F1F6100190060308F /* LaunchScreen.storyboard */; };
+		ED55632C1F6100190060308F /* TimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55632B1F6100190060308F /* TimeCalculatorTests.swift */; };
+		ED5563371F6100190060308F /* TimeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5563361F6100190060308F /* TimeCalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED5563281F6100190060308F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED55630B1F6100190060308F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5563121F6100190060308F;
+			remoteInfo = TimeCalculator;
+		};
+		ED5563331F6100190060308F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED55630B1F6100190060308F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5563121F6100190060308F;
+			remoteInfo = TimeCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED5563131F6100190060308F /* TimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5563161F6100190060308F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED5563181F6100190060308F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED55631B1F6100190060308F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED55631D1F6100190060308F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED5563201F6100190060308F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED5563221F6100190060308F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5563271F6100190060308F /* TimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED55632B1F6100190060308F /* TimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculatorTests.swift; sourceTree = "<group>"; };
+		ED55632D1F6100190060308F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5563321F6100190060308F /* TimeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5563361F6100190060308F /* TimeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCalculatorUITests.swift; sourceTree = "<group>"; };
+		ED5563381F6100190060308F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED5563101F6100190060308F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5563241F6100190060308F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED55632F1F6100190060308F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED55630A1F6100190060308F = {
+			isa = PBXGroup;
+			children = (
+				ED5563151F6100190060308F /* TimeCalculator */,
+				ED55632A1F6100190060308F /* TimeCalculatorTests */,
+				ED5563351F6100190060308F /* TimeCalculatorUITests */,
+				ED5563141F6100190060308F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED5563141F6100190060308F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED5563131F6100190060308F /* TimeCalculator.app */,
+				ED5563271F6100190060308F /* TimeCalculatorTests.xctest */,
+				ED5563321F6100190060308F /* TimeCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED5563151F6100190060308F /* TimeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				ED5563161F6100190060308F /* AppDelegate.swift */,
+				ED5563181F6100190060308F /* ViewController.swift */,
+				ED55631A1F6100190060308F /* Main.storyboard */,
+				ED55631D1F6100190060308F /* Assets.xcassets */,
+				ED55631F1F6100190060308F /* LaunchScreen.storyboard */,
+				ED5563221F6100190060308F /* Info.plist */,
+			);
+			path = TimeCalculator;
+			sourceTree = "<group>";
+		};
+		ED55632A1F6100190060308F /* TimeCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED55632B1F6100190060308F /* TimeCalculatorTests.swift */,
+				ED55632D1F6100190060308F /* Info.plist */,
+			);
+			path = TimeCalculatorTests;
+			sourceTree = "<group>";
+		};
+		ED5563351F6100190060308F /* TimeCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED5563361F6100190060308F /* TimeCalculatorUITests.swift */,
+				ED5563381F6100190060308F /* Info.plist */,
+			);
+			path = TimeCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED5563121F6100190060308F /* TimeCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED55633B1F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculator" */;
+			buildPhases = (
+				ED55630F1F6100190060308F /* Sources */,
+				ED5563101F6100190060308F /* Frameworks */,
+				ED5563111F6100190060308F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeCalculator;
+			productName = TimeCalculator;
+			productReference = ED5563131F6100190060308F /* TimeCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED5563261F6100190060308F /* TimeCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED55633E1F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorTests" */;
+			buildPhases = (
+				ED5563231F6100190060308F /* Sources */,
+				ED5563241F6100190060308F /* Frameworks */,
+				ED5563251F6100190060308F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5563291F6100190060308F /* PBXTargetDependency */,
+			);
+			name = TimeCalculatorTests;
+			productName = TimeCalculatorTests;
+			productReference = ED5563271F6100190060308F /* TimeCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED5563311F6100190060308F /* TimeCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5563411F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorUITests" */;
+			buildPhases = (
+				ED55632E1F6100190060308F /* Sources */,
+				ED55632F1F6100190060308F /* Frameworks */,
+				ED5563301F6100190060308F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5563341F6100190060308F /* PBXTargetDependency */,
+			);
+			name = TimeCalculatorUITests;
+			productName = TimeCalculatorUITests;
+			productReference = ED5563321F6100190060308F /* TimeCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED55630B1F6100190060308F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Porcaro, Keano Dean - porkd002";
+				TargetAttributes = {
+					ED5563121F6100190060308F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED5563261F6100190060308F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED5563121F6100190060308F;
+					};
+					ED5563311F6100190060308F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED5563121F6100190060308F;
+					};
+				};
+			};
+			buildConfigurationList = ED55630E1F6100190060308F /* Build configuration list for PBXProject "TimeCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED55630A1F6100190060308F;
+			productRefGroup = ED5563141F6100190060308F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED5563121F6100190060308F /* TimeCalculator */,
+				ED5563261F6100190060308F /* TimeCalculatorTests */,
+				ED5563311F6100190060308F /* TimeCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED5563111F6100190060308F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5563211F6100190060308F /* LaunchScreen.storyboard in Resources */,
+				ED55631E1F6100190060308F /* Assets.xcassets in Resources */,
+				ED55631C1F6100190060308F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5563251F6100190060308F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5563301F6100190060308F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED55630F1F6100190060308F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5563191F6100190060308F /* ViewController.swift in Sources */,
+				ED5563171F6100190060308F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5563231F6100190060308F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED55632C1F6100190060308F /* TimeCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED55632E1F6100190060308F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5563371F6100190060308F /* TimeCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED5563291F6100190060308F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5563121F6100190060308F /* TimeCalculator */;
+			targetProxy = ED5563281F6100190060308F /* PBXContainerItemProxy */;
+		};
+		ED5563341F6100190060308F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5563121F6100190060308F /* TimeCalculator */;
+			targetProxy = ED5563331F6100190060308F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED55631A1F6100190060308F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED55631B1F6100190060308F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED55631F1F6100190060308F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED5563201F6100190060308F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED5563391F6100190060308F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED55633A1F6100190060308F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED55633C1F6100190060308F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ED55633D1F6100190060308F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ED55633F1F6100190060308F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeCalculator.app/TimeCalculator";
+			};
+			name = Debug;
+		};
+		ED5563401F6100190060308F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeCalculator.app/TimeCalculator";
+			};
+			name = Release;
+		};
+		ED5563421F6100190060308F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TimeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TimeCalculator;
+			};
+			name = Debug;
+		};
+		ED5563431F6100190060308F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TimeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.keano.TimeCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TimeCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED55630E1F6100190060308F /* Build configuration list for PBXProject "TimeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5563391F6100190060308F /* Debug */,
+				ED55633A1F6100190060308F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED55633B1F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED55633C1F6100190060308F /* Debug */,
+				ED55633D1F6100190060308F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED55633E1F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED55633F1F6100190060308F /* Debug */,
+				ED5563401F6100190060308F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED5563411F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5563421F6100190060308F /* Debug */,
+				ED5563431F6100190060308F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED55630B1F6100190060308F /* Project object */;
+}
