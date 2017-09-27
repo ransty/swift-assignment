@@ -42,33 +42,36 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     
     @IBAction func calculateFormula(_ sender: Any) {
-        // Distance / ((pi * Diameter) / 60) * RPM) = Time (ms)
-        // First we need all the variables
-        let distance: String = targetDistanceTextField.text!
-        let diameter: String = wheelDiameterTextField.text!
-        let rpm: String = rpmTextField.text!
-        
-        // now we need to convert them to double since pi is a double
-        let intDistance: Double = Double(distance)!
-        let intDiameter: Double = Double(diameter)!
-        let intRPM: Double = Double(rpm)!
-        
-        // calculate the result
-        let result: Double = (intDistance / ((Double.pi * intDiameter) / 60) * intRPM);
-        
-        // we don't care about more than 2 decimal places, so lets round
-        let roundedResult: Double = Double(round(100*result)/100);
-        
-        // convert rounded result to string so we can print it
-        let stringRoundedResult: String = String(roundedResult);
-        
-        // hide the keyboard
-        self.rpmTextField.resignFirstResponder();
-        self.wheelDiameterTextField.resignFirstResponder();
-        self.targetDistanceTextField.resignFirstResponder();
-        
-        // now set result label to the result!
-        resultLabel.text = stringRoundedResult + " milliseconds";
+        // before we calculate anything, check to see if all the textfields are empty/null
+        if (!(targetDistanceTextField.text?.isEmpty)! && !(rpmTextField.text?.isEmpty)! && !(wheelDiameterTextField.text?.isEmpty)!) {
+            // Distance / ((pi * Diameter) / 60) * RPM) = Time (ms)
+            // First we need all the variables
+            let distance: String = targetDistanceTextField.text!
+            let diameter: String = wheelDiameterTextField.text!
+            let rpm: String = rpmTextField.text!
+            
+            // now we need to convert them to double since pi is a double
+            let intDistance: Double = Double(distance)!
+            let intDiameter: Double = Double(diameter)!
+            let intRPM: Double = Double(rpm)!
+            
+            // calculate the result
+            let result: Double = (intDistance / ((Double.pi * intDiameter) / 60) * intRPM);
+            
+            // we don't care about more than 2 decimal places, so lets round
+            let roundedResult: Double = Double(round(100*result)/100);
+            
+            // convert rounded result to string so we can print it
+            let stringRoundedResult: String = String(roundedResult);
+            
+            // hide the keyboard
+            self.rpmTextField.resignFirstResponder();
+            self.wheelDiameterTextField.resignFirstResponder();
+            self.targetDistanceTextField.resignFirstResponder();
+            
+            // now set result label to the result!
+            resultLabel.text = stringRoundedResult + " milliseconds";
+        }
         
     }
     
