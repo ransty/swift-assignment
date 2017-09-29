@@ -505,6 +505,7 @@
 				ED55633D1F6100190060308F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED55633E1F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				ED5563401F6100190060308F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED5563411F6100190060308F /* Build configuration list for PBXNativeTarget "TimeCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				ED5563431F6100190060308F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
