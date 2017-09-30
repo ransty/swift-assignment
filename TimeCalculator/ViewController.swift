@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var checkButtonDiameter: UIButton!
     
+    @IBOutlet weak var unitsLabel: UILabel!
     @IBOutlet weak var textBoxInfo: UITextView!
     @IBOutlet weak var meterCheck: UIButton!
     @IBOutlet weak var metricButton: UIButton!
@@ -72,8 +73,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let diameter: String = wheelDiameterTextField.text!
                 let time: String = timeTextField.text!
                 
-                let intDistance: Double = Double(distance)!
-                let intDiameter: Double = Double(diameter)!
+                var intDistance: Double = Double(distance)!
+                var intDiameter: Double = Double(diameter)!
                 let intTime: Double = Double(time)!
                 
                 
@@ -83,6 +84,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 // d = distance
                 // p = Double.pi
                 // r = RPM
+                
+                // if metric, convert millimeters to 0.0393701
+                
+                if (!metric && !meters) {
+                    intDistance = intDistance / 25.4;
+                    intDiameter = intDiameter / 25.4;
+                } else if (!metric && meters) {
+                    intDistance = intDistance / 0.3048;
+                    intDiameter = intDiameter / 0.3048;
+                }
                 
                 // r = (k * p * t) / (60 * d)
                 
@@ -110,7 +121,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 // now we need to convert them to double since pi is a double
                 let intRPM: Double = Double(rpm)!
-                let intDiameter: Double = Double(diameter)!
+                var intDiameter: Double = Double(diameter)!
                 let intTime: Double = Double(time)!
                 
                 // calculate the result
@@ -122,6 +133,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 // d = (k * p * t) / (60 * r)
                 //
+                
+                if (!metric && !meters) {
+                    intDiameter = intDiameter / 25.4;
+                } else if (!metric && meters) {
+                    intDiameter = intDiameter / 0.3048;
+                }
                 
                 var result: Double = (intDiameter * Double.pi * intTime) / (60 * intRPM);
                 
@@ -139,10 +156,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.wheelDiameterTextField.resignFirstResponder();
                 self.rpmTextField.resignFirstResponder();
                 
-                if (meters) {
-                    resultLabel.text = stringRoundedResult + " meters";
-                } else {
-                resultLabel.text = stringRoundedResult + " millimeters";
+                if (meters && metric) {
+                    resultLabel.text = stringRoundedResult + " m";
+                } else if (!metric && !meters) {
+                    resultLabel.text = stringRoundedResult + " in";
+                } else if (!metric && meters) {
+                    resultLabel.text = stringRoundedResult + " ft";
+                }
+                else {
+                resultLabel.text = stringRoundedResult + " mm";
                 }
                 
             }
@@ -155,7 +177,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let rpm: String = rpmTextField.text!
                 
                 // now we need to convert them to double since pi is a double
-                let intDistance: Double = Double(distance)!
+                var intDistance: Double = Double(distance)!
                 let intTime: Double = Double(time)!
                 let intRPM: Double = Double(rpm)!
                 
@@ -163,7 +185,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 // d = distance
                 // p = Double.pi
                 // r = RPM
-                
+                if (!metric && !meters) {
+                    intDistance = intDistance / 25.4;
+                } else if (!metric && meters) {
+                    intDistance = intDistance / 0.3048;
+                }
                 // k = (60 * d * r) / (p * t)
                 
                 // calculate the result
@@ -183,10 +209,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.timeTextField.resignFirstResponder();
                 self.targetDistanceTextField.resignFirstResponder();
                 
-                if (meters) {
-                    resultLabel.text = stringRoundedResult + " meters";
-                } else {
-                resultLabel.text = stringRoundedResult + " millimeters";
+                if (meters && metric) {
+                    resultLabel.text = stringRoundedResult + " m";
+                } else if (!metric && !meters) {
+                    resultLabel.text = stringRoundedResult + " in"
+                } else if (!metric && meters) {
+                    resultLabel.text = stringRoundedResult + " ft";
+                }
+                else {
+                resultLabel.text = stringRoundedResult + " mm";
                 }
             }
         } else { // default time calc
@@ -198,9 +229,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let rpm: String = rpmTextField.text!
                 
                 // now we need to convert them to double since pi is a double
-                let intDistance: Double = Double(distance)!
-                let intDiameter: Double = Double(diameter)!
+                var intDistance: Double = Double(distance)!
+                var intDiameter: Double = Double(diameter)!
                 let intRPM: Double = Double(rpm)!
+                
+                if (metric == false) {
+                    intDistance = intDistance / 25.4;
+                    intDiameter = intDiameter / 25.4;
+                }
                 
                 
                 // calculate the result
@@ -320,10 +356,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
             button.setImage(#imageLiteral(resourceName: "Checked"), for: .normal)
             metric = false;
             self.metricButton.setImage(#imageLiteral(resourceName: "Unchecked"), for: .normal)
+            self.unitsLabel.text = "Set all units to Feet";
         } else if (!metric) {
             button.setImage(#imageLiteral(resourceName: "Unchecked"), for: .normal)
             metric = true;
             self.metricButton.setImage(#imageLiteral(resourceName: "Checked"), for: .normal)
+            self.unitsLabel.text = "Set all units to Meters";
         }
     }
     
@@ -332,10 +370,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             button.setImage(#imageLiteral(resourceName: "Checked"), for: .normal)
             metric = true;
             self.imperialButton.setImage(#imageLiteral(resourceName: "Unchecked"), for: .normal)
+            self.unitsLabel.text = "Set all units to Meters";
         } else if (metric) {
             button.setImage(#imageLiteral(resourceName: "Unchecked"), for: .normal)
             metric = false;
             self.imperialButton.setImage(#imageLiteral(resourceName: "Checked"), for: .normal)
+            self.unitsLabel.text = "Set all units to Feet";
+            
         }
     }
     

@@ -24,44 +24,57 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-eH-skQ">
                                 <rect key="frame" x="16" y="28" width="382" height="688"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-9Y-Mbp">
-                                        <rect key="frame" x="273.66666666666674" y="143" width="100.33333333333331" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-9Y-Mbp">
+                                        <rect key="frame" x="349" y="143" width="25" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Li6-4y-EWG"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-Cq-Qdt">
-                                        <rect key="frame" x="274" y="181" width="100" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-Cq-Qdt">
+                                        <rect key="frame" x="349" y="181" width="25" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ma1-SC-mur"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="247" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxI-w0-sG8">
-                                        <rect key="frame" x="274" y="219" width="100" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="247" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxI-w0-sG8">
+                                        <rect key="frame" x="349" y="219" width="25" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Neu-3J-TVI"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Revolutions Per Minute" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-XY-MwO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" text="Revolutions Per Minute" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-XY-MwO">
                                         <rect key="frame" x="8" y="186" width="176" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel Diameter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-Pe-sH5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheel Diameter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-Pe-sH5">
                                         <rect key="frame" x="8" y="148" width="122.66666666666666" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Target Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-fT-U7r">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" text="Target Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-fT-U7r">
                                         <rect key="frame" x="8" y="222" width="121" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-9A-n3e">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-9A-n3e">
                                         <rect key="frame" x="8" y="329" width="343" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.012865800947581718" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,8 +83,9 @@
                                             <action selector="calculateFormula:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgi-Ty-5q0"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-8M-gRm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-8M-gRm">
                                         <rect key="frame" x="374" y="334" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -92,9 +106,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cH-t4-KVB">
-                                        <rect key="frame" x="273" y="105" width="100" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cH-t4-KVB">
+                                        <rect key="frame" x="349" y="105" width="24" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="N5c-0z-GZP"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -138,21 +154,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note: Default units are in millimeters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n24-iQ-Rwc">
-                                        <rect key="frame" x="8" y="367" width="365" height="39"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metric: Units are in mm and m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n24-iQ-Rwc">
+                                        <rect key="frame" x="8" y="387" width="365" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zAj-bB-URJ">
-                                        <rect key="frame" x="8" y="427" width="365" height="253"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">This application calculates the time required (ms or s) to travel a certain amount of distance (target distance) with a set amount of RPM and wheel diameter. Use the buttons at the top to rearrange the formula. This allows for calculation of RPM, Distance or Diameter if these values are not known.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTp-Po-YaV">
                                         <rect key="frame" x="88" y="72" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -201,76 +209,30 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Imperial: Units are in f and in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hCc-NA-iZ5">
+                                        <rect key="frame" x="8" y="434" width="365" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zAj-bB-URJ">
+                                        <rect key="frame" x="9" y="481" width="365" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.7916263885" green="0.65168256920000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">This application calculates the time required (ms or s) to travel a certain amount of distance (target distance) with a set amount of RPM and wheel diameter. Use the buttons at the top to rearrange the formula. This allows for calculation of RPM, Distance or Diameter if these values are not known.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Formula: Distance / (((pi * Diameter) / 60) * RPM) = Time" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QeZ-eR-Bse">
+                                        <rect key="frame" x="1" y="605" width="381" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.79162638847636202" green="0.65168256922948364" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="6R7-fT-U7r" firstAttribute="leading" secondItem="dhV-eH-skQ" secondAttribute="leading" constant="8" id="1Zb-qc-LCd">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="6R7-fT-U7r" firstAttribute="top" secondItem="7KW-XY-MwO" secondAttribute="bottom" constant="15" id="Aa6-L9-d4M">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="4EJ-8M-gRm" secondAttribute="trailing" constant="8" id="BAH-ma-MAO">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="m9H-9Y-Mbp" firstAttribute="leading" secondItem="oGj-Pe-sH5" secondAttribute="trailing" constant="143" id="CM2-vP-2d1">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="143"/>
-                                    </constraint>
-                                    <constraint firstItem="v4q-Cq-Qdt" firstAttribute="top" secondItem="m9H-9Y-Mbp" secondAttribute="bottom" constant="8" id="Flf-hg-nUi">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="WgS-9A-n3e" firstAttribute="leading" secondItem="dhV-eH-skQ" secondAttribute="leading" constant="8" id="Qgc-nh-vkK">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="oGj-Pe-sH5" firstAttribute="top" secondItem="dhV-eH-skQ" secondAttribute="top" constant="148" id="Rmp-d5-wFH">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="148"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="v4q-Cq-Qdt" secondAttribute="trailing" constant="8" id="YKF-hJ-lfN">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="m9H-9Y-Mbp" firstAttribute="top" secondItem="dhV-eH-skQ" secondAttribute="top" constant="143" id="b2c-Lp-np2">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="143"/>
-                                    </constraint>
-                                    <constraint firstItem="4EJ-8M-gRm" firstAttribute="leading" secondItem="WgS-9A-n3e" secondAttribute="trailing" constant="23" id="c8V-JM-S3N">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="4EJ-8M-gRm" firstAttribute="top" secondItem="dxI-w0-sG8" secondAttribute="bottom" constant="85" id="fsC-8t-6Hy">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="85"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="m9H-9Y-Mbp" secondAttribute="trailing" constant="8" id="h7E-j4-Gv9">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="7KW-XY-MwO" firstAttribute="top" secondItem="oGj-Pe-sH5" secondAttribute="bottom" constant="17" id="lt0-lZ-uGh">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="17"/>
-                                    </constraint>
-                                    <constraint firstItem="6R7-fT-U7r" firstAttribute="top" secondItem="7KW-XY-MwO" secondAttribute="bottom" constant="15" id="n84-eW-r0R">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="4EJ-8M-gRm" secondAttribute="trailing" constant="8" id="n8H-ec-ZJG">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="v4q-Cq-Qdt" firstAttribute="leading" secondItem="7KW-XY-MwO" secondAttribute="trailing" constant="90" id="p5n-eR-GLl">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="90"/>
-                                    </constraint>
-                                    <constraint firstItem="oGj-Pe-sH5" firstAttribute="leading" secondItem="dhV-eH-skQ" secondAttribute="leading" constant="8" id="qfw-zz-Odh">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="WgS-9A-n3e" firstAttribute="top" secondItem="6R7-fT-U7r" secondAttribute="bottom" constant="86" id="sTh-Ip-hye">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="86"/>
-                                    </constraint>
-                                    <constraint firstItem="7KW-XY-MwO" firstAttribute="leading" secondItem="dhV-eH-skQ" secondAttribute="leading" constant="8" id="tBc-vA-aku">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="dxI-w0-sG8" firstAttribute="leading" secondItem="6R7-fT-U7r" secondAttribute="trailing" constant="145" id="uH5-uu-vyH">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="145"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="dxI-w0-sG8" secondAttribute="trailing" constant="8" id="xfC-8s-TXE">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                    <constraint firstItem="dxI-w0-sG8" firstAttribute="top" secondItem="v4q-Cq-Qdt" secondAttribute="bottom" constant="8" id="yPM-3g-GaE">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
-                                    </constraint>
-                                </constraints>
+                                <color key="backgroundColor" red="0.79162638847636202" green="0.65168256922948364" blue="1" alpha="0.283478213028169" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -295,6 +257,7 @@
                         <outlet property="targetDistanceTextField" destination="dxI-w0-sG8" id="irR-3W-uwM"/>
                         <outlet property="textBoxInfo" destination="zAj-bB-URJ" id="Asd-ol-Evx"/>
                         <outlet property="timeTextField" destination="8cH-t4-KVB" id="l54-Wq-glp"/>
+                        <outlet property="unitsLabel" destination="5lH-i3-bfX" id="PHm-o4-QTX"/>
                         <outlet property="wheelDiameterLabel" destination="oGj-Pe-sH5" id="CSd-4P-g1r"/>
                         <outlet property="wheelDiameterTextField" destination="m9H-9Y-Mbp" id="OJk-Eu-nUz"/>
                     </connections>
