@@ -403,6 +403,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return string == numberFiltered
 
     }
+    
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        //print(UIDevice.current.orientation.isLandscape);
+        
+    }
 
 }
 
